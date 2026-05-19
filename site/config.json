@@ -10,40 +10,16 @@
           "id": "pve",
           "name": "Proxmox VE",
           "description": "Virtual Environment",
-          "url": "https://pve.local",
+          "url": "https://pve.me",
           "icon": "🖥️",
           "invertStatus": false
         },
         {
-          "id": "pbs",
-          "name": "Proxmox Backup Server",
-          "description": "Backup Server",
-          "url": "https://pbs.local",
-          "icon": "💾",
-          "invertStatus": false
-        },
-        {
-          "id": "monitor",
-          "name": "OP5 Monitor",
-          "description": "Monitoring",
-          "url": "https://op5.local",
-          "icon": "📈",
-          "invertStatus": false
-        },
-        {
-          "id": "uptimekuma",
+          "id": "kuma",
           "name": "Uptime Kuma",
           "description": "Monitoring",
-          "url": "https://uptimekuma.local",
+          "url": "http://192.168.123.123:3001/dashboard",
           "icon": "📈",
-          "invertStatus": false
-        },
-        {
-          "id": "portainer",
-          "name": "Portainer",
-          "description": "Container Management",
-          "url": "https://portainer.local",
-          "icon": "🐳",
           "invertStatus": false
         }
       ]
@@ -58,39 +34,15 @@
           "id": "unifi",
           "name": "UniFi Network Portal",
           "description": "Network",
-          "url": "https://unifi.local",
+          "url": "https://network.unifi.com",
           "icon": "📶",
           "invertStatus": false
         },
         {
-          "id": "bitwarden",
-          "name": "Bitwarden",
-          "description": "Password Manager",
-          "url": "https://bitwarden.local",
-          "icon": "🔐",
-          "invertStatus": false
-        },
-        {
-          "id": "cisco",
-          "name": "Cisco 2960",
-          "description": "Switch",
-          "url": "http://cisco2960.local",
-          "icon": "🔀",
-          "invertStatus": false
-        },
-        {
-          "id": "ipmi",
-          "name": "IPMI",
-          "description": "Server Management",
-          "url": "https://ipmi.local",
-          "icon": "🧠",
-          "invertStatus": false
-        },
-        {
-          "id": "vlan123",
+          "id": "vlan200",
           "name": "CRITICAL VLAN IS BLOCKED",
           "description": "Critical Monitoring",
-          "url": "192.168.123.123",
+          "url": "10.177.200.30",
           "icon": "🚨",
           "invertStatus": true
         }
@@ -106,15 +58,7 @@
           "id": "dsm",
           "name": "DSM - Synology DiskStation",
           "description": "Storage",
-          "url": "https://dsm.local",
-          "icon": "📦",
-          "invertStatus": false
-        },
-        {
-          "id": "truenas",
-          "name": "TrueNAS",
-          "description": "Storage",
-          "url": "https://truenas.local",
+          "url": "https://dsmy.me",
           "icon": "📦",
           "invertStatus": false
         }
@@ -128,9 +72,9 @@
       "items": [
         {
           "id": "printer",
-          "name": "Brother DCP-L3550CDW",
+          "name": "Brother",
           "description": "Printer",
-          "url": "http://printer.local",
+          "url": "http://10.177.100.123",
           "icon": "🖨️",
           "invertStatus": false
         },
@@ -138,7 +82,7 @@
           "id": "jellyfin",
           "name": "Jellyfin",
           "description": "Media Server",
-          "url": "https://jellyfin.local",
+          "url": "https://jellyfin.home",
           "icon": "🎬",
           "invertStatus": false
         }
