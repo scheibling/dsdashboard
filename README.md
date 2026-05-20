@@ -219,6 +219,27 @@ This will provide you with a basic default setup that you can modify to your own
 By doing this before you start the container all your settings, password, backups and modifications to icons etc will be persistent when updating to a new image.
 
 
+
+## First start
+
+1. Copy `.env.example` to `.env`:
+
+```bash
+cp .env.example .env
+```
+
+2. Edit `.env` and change the password:
+
+```bash
+nano .env
+```
+
+Set a real password:
+
+```text
+DASHBOARD_ADMIN_PASSWORD=your-long-secure-password
+```
+
 ## Docker Run
 
 ```bash
