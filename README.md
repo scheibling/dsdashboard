@@ -222,16 +222,18 @@ By doing this before you start the container all your settings, password, backup
 
 ## First start
 
-1. Copy `.env.example` to `.env`:
+1. Create `.env`: in your `/your-path/`
 
-```bash
-cp .env.example .env
-```
 
-2. Edit `.env` and change the password:
+2. Edit `.env` and add the following enviroment settings.
 
-```bash
-nano .env
+```text
+# Copy this to .env before first start and change the password.
+DASHBOARD_ADMIN_PASSWORD=change-this-long-password
+SESSION_TIMEOUT_MINUTES=30
+COOKIE_SECURE=false
+STATUS_INTERVAL=60
+STATUS_TIMEOUT=5
 ```
 
 Set a real password:
