@@ -300,6 +300,21 @@ function ensureStartupFiles() {
     fs.mkdirSync(DATA_DIR, { recursive: true });
     fs.mkdirSync(BACKUP_DIR, { recursive: true });
 
+    if (!fs.existsSync(CONFIG_PATH) && !fs.existsSync(STATUS_PATH)) {
+        // Copy over all sample files if the site directory is empty
+        const sampleDir = "/sample-site";
+        if (fs.existsSync(sampleDir) && fs.statSync(sampleDir).isDirectory()) {
+            for (const entry of fs.readdirSync(sampleDir)) {
+                const src = path.join(sampleDir, entry);
+                const dest = path.join(SITE_DIR, entry);
+                if (fs.statSync(src).isFile()) {
+                    fs.copyFileSync(src, dest);
+                    fs.chmodSync(dest, 0o644);
+                }
+            }
+        }
+    }
+
     if (!fs.existsSync(CONFIG_PATH)) {
         writeJsonAtomic(CONFIG_PATH, { sections: [] }, 0o644);
     }
